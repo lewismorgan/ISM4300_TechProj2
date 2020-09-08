@@ -1,4 +1,8 @@
-﻿using System;
+﻿/// Lewis Morgan
+/// ISM 4300 Tech Project #2a
+/// September 08, 2020
+
+using System;
 
 namespace TechProj2_ConsoleLoop
 {
