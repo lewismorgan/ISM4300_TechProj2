@@ -9,17 +9,20 @@ namespace TechProj2_ConsoleLoop
             bool restart = false;
             bool exit = false;
 
+            // Main Program loop, it will stop running when exit is true, and it will rerun when restart is true
             while (!exit || restart)
             {
                 Console.WriteLine("Please enter a number between 1-25 (inclusive)");
                 readInput();
                 // Program main function finished. Ask the user if they want to restart the program.
-                Console.WriteLine("Press the 'y' key to restart. Any other key will quit the program");
+                Console.WriteLine("\nPress the 'y' key to restart. Any other key will quit the program");
                 char endingKey = Console.ReadKey().KeyChar;
                 // Check to see if the key they entered was y
                 if (endingKey == 'y' || endingKey == 'Y')
                 {
                     restart = true;
+                    // stops the y key from being smushed against "Please enter a number..." when restarting
+                    Console.WriteLine("\n");
                 } 
                 else
                 {
